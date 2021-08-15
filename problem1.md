@@ -11,11 +11,13 @@ The fundamental idea is to notice that the number of perfect squares in the rang
 
 To prove the thesis, it is sufficient to prove that, for a n sufficiently large (>100), it exists a trio of integers a, b, c, with a<b<c, such that:
 
+```
 {  
   a + b = x^2  
   a + c = y^2  
   b + c = z^2  
-}  
+}
+```
 
 with
 n <= a < b < c <= 2n and x, y, z being integers.
@@ -109,8 +111,5 @@ which is the same as:
 n^2 - 96n + 192 > 0  
 ```
 
-The above inequality is true for n > 48 + 8*sqrt(33) 
-
-```
-48 + 8*sqrt(33) is lower than 96, which proves the thesis for n > 100
-```
+The above inequality is true for `n > 48 + 8*sqrt(33)`.  
+Since `48 + 8*sqrt(33)` is lower than 96, then we proved the thesis for n > 100
