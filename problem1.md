@@ -21,7 +21,7 @@ To prove the thesis, it is sufficient to prove that, for a n sufficiently large 
 
 with
 n <= a < b < c <= 2n and x, y, z being integers.
-If this is true, then it would beimpossible to divide the range [n...2n] in 2 groups so that no pair of numbers would have their sum be a perfect square. Indeed, 2 numbers among a, b, c would inevitably fall in the same group.
+If this is true, then it would beimpossible to divide the range [n...2n] in 2 piles so that no pair of numbers would have their sum be a perfect square. Indeed, 2 numbers among a, b, c would inevitably fall in the same pile.
 
 More in particular, let's assume that x, y, z are consecutive numbers in the form of 2m - 1, 2m, 2m + 1, with m being an integer.
 Basically 3 consecutive odd-even-odd numbers. Note that if the consecutive numbers were even-odd-even, the system would have no solution in the integer domain. 
