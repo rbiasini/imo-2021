@@ -6,7 +6,7 @@ the piles contains two cards such that the sum of their numbers is a perfect squ
 
 ## Solution
 
-The set of integers that can be otained as a sum of 2 numbers in the range [n, 2n] is [2n+1, 4n-1].
+The set of integers that can be obtained as a sum of 2 numbers in the range [n, 2n] is [2n+1, 4n-1].
 The fundamental idea is to notice that the number of perfect squares in the range [2n+1, 4n-1] tends to grow as n grows.
 
 To prove the thesis, it is sufficient to prove that, for a n sufficiently large (>100), it exists a trio of integers a, b, c, with a<b<c, such that:
@@ -37,7 +37,7 @@ We now have:
 ```
 
 Note that if the consecutive numbers were even-odd-even, the system would have no solution in the integer domain.
-Through linear combinations of the equations of the linear system, we can rewite it as:
+Through linear combinations of the equations of the linear system, we can rewrite it as:
 
 ```
 {  
@@ -65,7 +65,7 @@ Solving the inequalities above, you get:
 }
 ```
 
-We can conservatively add 1 t the right side of the first inequality. This is to make sure that an integer solution for m exists.
+We can conservatively add 1 to the right side of the first inequality. This is to make sure that an integer solution for m exists.
 
 So, we now have:
 
@@ -82,7 +82,7 @@ which has solutions for m only if:
 (3 + sqrt(1 + n)) / 2 <= (-1 + sqrt(1 + 2n)) / 2  
 ```
 
-The obove inequality can be simpiefied to:
+The above inequality can be simplified to:
 
 ```
 4 + sqrt(1 + n)  <= sqrt(1 + 2n)  
@@ -94,7 +94,7 @@ squaring both sides:
 16 + 8 * sqrt(1 + n) + 1 + n  <= 1 + 2n  
 ```
 
-which can be simpliefied to:
+which can be simplified to:
 
 ```
 8 * sqrt(1 + n)  <= n - 16  
