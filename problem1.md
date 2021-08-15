@@ -25,6 +25,7 @@ More in particular, let's assume that x, y, z are consecutive numbers in the for
 Basically 3 consecutive odd-even-odd numbers. Note that if the consecutive numbers were even-odd-even, the system would have no solution in the integer domain. 
 
 we now have:
+
 {  
   a + b= (2m-1)^2  
   a + c = (2m)^2  
@@ -40,12 +41,14 @@ which, through linear combinations of the equations of the linear system, it can
 }  
 
 now we have to prove that, for n > 100, it is possible to find an m such that:
+
 {
   4m^2 - 4m >= n  
   2m^2 + 2m <= n  
 }
 
 Solving the inequalities above, you get:
+
 {
   m >= (1 + sqrt(1 + n)) / 2  
   m <= (-1 + sqrt(1 + 2n)) / 2  
@@ -54,6 +57,7 @@ Solving the inequalities above, you get:
 We can conservatively add 1 t the right side of the first inequality. This is to make sure that an integer solution for m exists.
 
 So, we now have:
+
 {
   m >= (3 + sqrt(1 + n)) / 2  
   m <= (-1 + sqrt(1 + 2n)) / 2  
