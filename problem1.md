@@ -11,11 +11,11 @@ The fundamental idea is to notice that the number of perfect squares in the rang
 
 To prove the thesis, it is sufficient to prove that, for a n sufficiently large (>100), it exists a trio of integers a, b, c, with a<b<c, such that:
 
-{
-  a + b = x^2
-  a + c = y^2
-  b + c = z^2
-}
+{  
+  a + b = x^2  
+  a + c = y^2  
+  b + c = z^2  
+}  
 
 with
 n <= a < b < c <= 2n and x, y, z being integers.
@@ -25,63 +25,63 @@ More in particular, let's assume that x, y, z are consecutive numbers in the for
 Basically 3 consecutive odd-even-odd numbers. Note that if the consecutive numbers were even-odd-even, the system would have no solution in the integer domain. 
 
 we now have:
-{
-  a + b= (2m-1)^2
-  a + c = (2m)^2
+{  
+  a + b= (2m-1)^2  
+  a + c = (2m)^2  
   b + c = (2m + 1)^2 
-}
+}  
 
 which, through linear combinations of the equations of the linear system, it can be rewritten as:
 
-{
-  a = 4m^2 - 4m
-  b = 4m^2 + 1
-  c = 4m^2 + 4m
-}
+{  
+  a = 4m^2 - 4m  
+  b = 4m^2 + 1  
+  c = 4m^2 + 4m  
+}  
 
 now we have to prove that, for n > 100, it is possible to find an m such that:
 {
-  4m^2 - 4m >= n
-  2m^2 + 2m <= n
+  4m^2 - 4m >= n  
+  2m^2 + 2m <= n  
 }
 
 Solving the inequalities above, you get:
 {
-  m >= (1 + sqrt(1 + n)) / 2
-  m <= (-1 + sqrt(1 + 2n)) / 2
+  m >= (1 + sqrt(1 + n)) / 2  
+  m <= (-1 + sqrt(1 + 2n)) / 2  
 }
 
 We can conservatively add 1 t the right side of the first inequality. This is to make sure that an integer solution for m exists.
 
 So, we now have:
 {
-  m >= (3 + sqrt(1 + n)) / 2
-  m <= (-1 + sqrt(1 + 2n)) / 2
+  m >= (3 + sqrt(1 + n)) / 2  
+  m <= (-1 + sqrt(1 + 2n)) / 2  
 }
 
 which has solutions for m only if:
 
-(3 + sqrt(1 + n)) / 2 <= (-1 + sqrt(1 + 2n)) / 2
+(3 + sqrt(1 + n)) / 2 <= (-1 + sqrt(1 + 2n)) / 2  
 
 The obove inequality can be simpiefied to:
 
-4 + sqrt(1 + n)  <= sqrt(1 + 2n)
+4 + sqrt(1 + n)  <= sqrt(1 + 2n)  
 
 squaring both sides:
 
-16 + 8 * sqrt(1 + n) + 1 + n  <= 1 + 2n
+16 + 8 * sqrt(1 + n) + 1 + n  <= 1 + 2n  
 
 which can be simpliefied to:
 
-8 * sqrt(1 + n)  <= n - 16
+8 * sqrt(1 + n)  <= n - 16  
 
 squaring again both sides and assuming that n > 16:
 
-64 + 64n  <= n^2 - 32n + 256
+64 + 64n  <= n^2 - 32n + 256  
 
 which is the same as:
 
-n^2 - 96n + 192 > 0
+n^2 - 96n + 192 > 0  
 
 The above inequality is true for n > 48 + 8*sqrt(33) 
 
