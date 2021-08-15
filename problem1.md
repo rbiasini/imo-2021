@@ -112,5 +112,5 @@ which is the same as:
 n^2 - 96n + 192 > 0  
 ```
 
-The above inequality is true for `n > 48 + 8*sqrt(33).  
+The above inequality is true for `n > 48 + 8*sqrt(33)`.  
 Since `48 + 8*sqrt(33)` is lower than 96, then we proved the thesis for n > 100
