@@ -21,7 +21,7 @@ To prove the thesis, it is sufficient to prove that, for a n sufficiently large 
 
 with
 n <= a < b < c <= 2n and x, y, z being integers.
-If this is true, then it would be impossible to divide the range [n...2n] in 2 piles so that no pair of numbers in each pile would has their sum equal to a perfect square. Indeed, 2 numbers among the trio a, b, c would inevitably fall in the same pile.
+If this is true, then it would be impossible to divide the range [n...2n] in 2 piles so that no pair of numbers in each pile has their sum equal to a perfect square. Indeed, at least 2 numbers among the trio a, b, c must inevitably fall in the same pile.
 
 More in particular, let's assume that x, y, z are consecutive numbers in the form of 2m - 1, 2m, 2m + 1, with m being an integer.
 Basically 3 consecutive odd-even-odd numbers. 
@@ -36,7 +36,7 @@ We now have:
 }
 ```
 
-Note that if the consecutive numbers were even-odd-even, the system would have no solution in the integer domain.
+Note that if the consecutive numbers were even-odd-even, the system above would have no solution in the integer domain.
 Through linear combinations of the equations of the linear system, we can rewrite it as:
 
 ```
