@@ -52,7 +52,7 @@ now we have to prove that, for n > 100, it is possible to find an integer m such
 ```
 {
   4m^2 - 4m >= n  
-  2m^2 + 2m <= n  
+  4m^2 + 4m <= 2n  
 }
 ```
 
